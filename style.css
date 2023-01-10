@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.postWapper{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.singlePost{
+    width: 23%;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 5px;
+}
+.singlePost:hover{
+    box-shadow: 1px 8px 16px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive parts start */
+/* Responsive parts ends */
+
+@media screen and (max-width: 992px) {
+    .singlePost{
+        width: 48%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .singlePost{
+        width: 100%;
+    }
+}
